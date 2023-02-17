@@ -20,7 +20,7 @@ return(
                  )}
                  </ul>
             <div className='flex content-center items-center ml-5 md:mr-5 mt-3 md:mt-3 lg:mt-0'>
-                <input type='search' placeholder='Search...' className='rounded-md outline-none px-3'/>
+                <input type='search' placeholder='Search...' className='rounded-md outline-none px-2'/>
                 <button><IoSearch size={20}/></button>
             </div>
         </div>
