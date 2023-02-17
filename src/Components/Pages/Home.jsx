@@ -9,7 +9,7 @@ const Home=()=>{
         <div className="relative h-[65vh] lg:h-[90vh]">
               <Slider/>
             </div>
-           <div className='border border-gray-100  shadow-md mb-10 mt-10 py-10 ml-10 mr-10 md:ml-20 md:mr-20'>
+           <div className='border border-gray-300  shadow-md mb-10 mt-20 py-10 md:mt-5 ml-10 mr-10 md:ml-20 md:mr-20'>
            <h2 className='ml-5 font-bold text-2xl'>Catalogue</h2>
                <Category/>
            </div>
