@@ -27,11 +27,11 @@ return(
             <li onClick={()=>setnavOpen(false)}>
                 <Link to='/contact'>Contact</Link>
             </li>
+            <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/login'>Login</a></button>
+            <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/sign_up'>Sign up</a></button>
         </ul>
         </nav>
         <div className='gap-3 flex md:mr-20'>
-            <button className=' rounded outline-none px-2 hover:bg-gray-600 hover:text-white border'><a href='/login'>Login</a></button>
-            <button className=' rounded outline-none px-2 hover:bg-gray-600 hover:text-white border'><a href='/sign_up'>Sign up</a></button>
             <BiUser size={20}/>
             <Link to='/cart'><AiOutlineShoppingCart size={20}/>
             <span className='absolute flex content-center text-sm items-center justify-center text-white top-1 left  w-[15px] h-[15px] bg-red-600 rounded-full'>
