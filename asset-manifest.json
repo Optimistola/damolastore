@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/damolastore/static/css/main.ae0b8371.css",
-    "main.js": "/damolastore/static/js/main.183166a0.js",
+    "main.css": "/damolastore/static/css/main.f13d7eba.css",
+    "main.js": "/damolastore/static/js/main.0840ab25.js",
     "static/media/slide6.jpeg": "/damolastore/static/media/slide6.fa1a5dcb6e9e69a1f8ac.jpeg",
     "static/media/slide2.jpeg": "/damolastore/static/media/slide2.c193d2eac43d04fe8ef4.jpeg",
     "static/media/slide5.jpeg": "/damolastore/static/media/slide5.28283f4030ca81932a60.jpeg",
@@ -52,11 +52,11 @@
     "static/media/electronics2.jpg": "/damolastore/static/media/electronics2.0aba289aba3302e4a9bc.jpg",
     "static/media/electronics5.jpg": "/damolastore/static/media/electronics5.cc71db48e95107819a52.jpg",
     "index.html": "/damolastore/index.html",
-    "main.ae0b8371.css.map": "/damolastore/static/css/main.ae0b8371.css.map",
-    "main.183166a0.js.map": "/damolastore/static/js/main.183166a0.js.map"
+    "main.f13d7eba.css.map": "/damolastore/static/css/main.f13d7eba.css.map",
+    "main.0840ab25.js.map": "/damolastore/static/js/main.0840ab25.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae0b8371.css",
-    "static/js/main.183166a0.js"
+    "static/css/main.f13d7eba.css",
+    "static/js/main.0840ab25.js"
   ]
 }
