@@ -14,7 +14,7 @@ import { Alert } from './Components/Utils/alert';
 function App() {
   return (
     <main>
-      <BrowserRouter>
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header/>
         <Alert/>
         <Routes>
