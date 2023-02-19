@@ -6,11 +6,11 @@ const Home=()=>{
     const {products}=useProduct()
     return(
         <section className="overflow-x-hidden">
-        <div className="relative h-[65vh] lg:h-[90vh]">
+        <div className="relative h-[65vh] md:h-85vh] lg:h-[90vh]">
               <Slider/>
             </div>
-           <div className='border border-gray-300  shadow-md mb-10 mt-20 py-10 md:mt-5 ml-10 mr-10 md:ml-20 md:mr-20'>
-           <h2 className='ml-5 font-bold text-2xl'>Catalogue</h2>
+           <div className='border border-gray-300 shadow-md mb-10 mt-20 py-10 md:mt-20 ml-5 mr-5 md:ml-20 md:mr-20'>
+           <h2 className='ml-5 font-bold text-2xl '>Catalogue</h2>
                <Category/>
            </div>
         </section>

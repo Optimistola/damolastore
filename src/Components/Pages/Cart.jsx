@@ -2,7 +2,7 @@ import { useProduct } from "../../Context/Store"
 import Empty from '../../Asset/Images/emptycart.gif'
 const Cart=({product})=>{
  const {cart}=useProduct();
- const {removeFromCart}=useProduct()
+ const {removeFromCart, moveToWish}=useProduct()
 return(
     <div className='ml-5 mr-5 lg:ml-20 lg:mr-20 mt-20 shadow-md py-10 bg-blue-200'>
         <div>
@@ -12,7 +12,9 @@ return(
         cart.map((items)=>(
                 <div >
                     <img src={items.img}/>
-                    <button className='bg-red-600 text-white rounded-md px-2' onClick={()=>removeFromCart(items.id)}>Remove</button>
+                    <button className='bg-red-600 text-white rounded-md btn-sm' onClick={()=>removeFromCart(items.id)}>Remove</button>
+                    <button className='bg-red-600 text-white rounded-md btn-sm' onClick={()=>moveToWish(items, items.id)}>move to wishlist</button>
+
                 </div>
             )):
             <div className='flex flex-col mt-20 justify-center items-center content-centers'>

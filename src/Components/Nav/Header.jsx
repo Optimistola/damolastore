@@ -9,7 +9,7 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 const Header =()=>{
     const {category}=useProduct()
-    const{cartLength}=useProduct();
+    const{cartLength, wishLength}=useProduct();
 return(
     <header>
         <Nav/>
@@ -17,7 +17,7 @@ return(
         <div className='md:flex  justify-between items-center font-secondary text-bold mt-2 capitalize bg-gray-900 text-white py-4'>
         <ul className=" ml-5 flex flex-wrap justify-betwen gap-3 md:gap-3 items-center contents-center">
                 {category.map((item)=>
-                 <li className='bg-gray-500  w-[30%] lg:w-[90px] md:w-[80px] hover:bg-gray-700 rounded-md lg:text-md text-center text-white'>
+                 <li className='bg-gray-500  w-[30%] lg:w-[90px] md:w-[90px] hover:bg-gray-700 rounded-md lg:text-md text-center text-white'>
                      <Link to={`category/${item.category}`}>{item.category}</Link>
                 </li>
                  )}
@@ -31,8 +31,10 @@ return(
                 {cartLength}
                 </span>
             </Link>
-            <Link to='/WishList'>
-                <BiShoppingBag/>
+            <Link to='/wish'><BiShoppingBag size={20}/>
+            <span className='relative flex content-center text-sm items-center justify-center text-white -top-5 left-3  w-[15px] h-[15px] bg-red-600 rounded-full'>
+                {wishLength}
+                </span>
             </Link>
         </div>
 

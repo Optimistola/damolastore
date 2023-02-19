@@ -7,6 +7,7 @@ import ErrorPage from './Components/Utils/Error';
 import Clothes from './Components/Category/clothes';
 import Electronics from './Components/Category/Electronics';
 import Cart from './Components/Pages/Cart';
+import Wish from './Components/Pages/Whislist';
 import Shoe from './Components/Category/Shoe';
 import Furniture from './Components/Category/Furniture';
 import {Route, Routes, BrowserRouter as Router, BrowserRouter} from 'react-router-dom'
@@ -22,6 +23,7 @@ function App() {
           <Route path='/about' element={<About/>}></Route>
           <Route path='/category/cloth' element={<Clothes/>}></Route>
           <Route path='/cart/' element={<Cart/>}></Route>
+          <Route path='/wish/' element={<Wish/>}></Route>
           <Route path='/category/electronics' element={<Electronics/>}></Route>
           <Route path='/category/shoe' element={<Shoe/>}></Route>
           <Route path='/category/furniture' element={<Furniture/>}></Route>

@@ -34,7 +34,7 @@ const Slider= ()=>{
       };
     return(
         <div className="">
-        <div className="absolute -top-5 -left-5 -right-5">
+        <div className="absolute -top-5 -left-8 -right-8">
           <Splide
             className=""
             options={options}
