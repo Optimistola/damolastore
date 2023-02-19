@@ -26,7 +26,19 @@ return(
     const[modal, setModal]=useState({text:''})
     const [category, setCategory]=useState([]);
     const [cartLength, setCartLength]=useState(0)
-    const addToCart=(product, )=>{
+
+    useEffect(()=>{
+      const storedCart=localStorage.getItem('cart');
+      console.log(JSON.parse(storedCart))
+      if(storedCart){
+          setCart(JSON.parse(storedCart))
+      }
+    }, [])
+    useEffect(()=>{
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+    }, [cart])
+    const addToCart=(product )=>{
         if(cart.find((item)=>item.id===product.id)){
             setModal({text:'Item already added in cart'});
             setTimeout(()=>setModal({text:''}), 1000);
@@ -40,6 +52,7 @@ return(
             window.navigator.vibrate(700);
         }
     }
+
     useEffect(()=>{
         setCategory(Categories);
         setCartLength(cart.length);

@@ -1,11 +1,9 @@
 import { useProduct } from "../Context/Store"
 import { Products } from "../Context/ProductContex";
 import ProductCard from "./ProductCard";
-import { Alert } from "./Utils/alert";
 const AllProducts=()=>{
-    const {isaddedtocart, add}=useProduct();
     return(
-        <div>
+        <div className=''>
          {Products.map((product)=>(
              <ProductCard product={product}/>
          ))}

@@ -77,7 +77,7 @@ export const Products =[
         id:1,
         price:62,
         img:productImage1,
-        name:'jumpsuit',
+        name:'blous',
         category:'cloth'
        },
        {
@@ -119,7 +119,7 @@ export const Products =[
         id:7,
         price:8,
         img:productImage7,
-        name:'jumpsuit',
+        name:'jeans',
         category:'cloth'
        },
     {

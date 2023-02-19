@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
-import {BiUser} from 'react-icons/bi';
 import {IoClose, IoMenu} from 'react-icons/io5'
-import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useProduct } from '../../Context/Store';
 import { Link } from 'react-router-dom';
 const MobileNav= ()=>{
@@ -27,17 +25,12 @@ return(
             <li onClick={()=>setnavOpen(false)}>
                 <Link to='/contact'>Contact</Link>
             </li>
-            <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/login'>Login</a></button>
-            <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/sign_up'>Sign up</a></button>
         </ul>
         </nav>
-        <div className='gap-3 flex md:mr-20'>
-            <BiUser size={20}/>
-            <Link to='/cart'><AiOutlineShoppingCart size={20}/>
-            <span className='absolute flex content-center text-sm items-center justify-center text-white top-1 left  w-[15px] h-[15px] bg-red-600 rounded-full'>
-                {cartLength}
-                </span>
-            </Link>
+        <div className='flex gap-3'>
+        <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/login'>Login</a></button>
+        <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/sign_up'>Sign up</a></button>
+
         </div>
 </div>
 
