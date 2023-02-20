@@ -28,6 +28,7 @@ return(
     const [category, setCategory]=useState([]);
     const [cartLength, setCartLength]=useState(0)
     const [wishLength, setWishLength]=useState(0)
+    const [amount, setAmount]=useState(0)
 
     useEffect(()=>{
       const storedCart=localStorage.getItem('cart');
@@ -40,6 +41,18 @@ return(
         localStorage.setItem('cart', JSON.stringify(cart));
 
     }, [cart])
+    useEffect(()=>{
+        const storedWish=localStorage.getItem('wish');
+        console.log(JSON.parse(storedWish))
+        if(storedWish){
+            setCart(JSON.parse(storedWish))
+        }
+      }, [])
+      useEffect(()=>{
+          localStorage.setItem('wish', JSON.stringify(wish));
+  
+      }, [wish])
+  
     //add item to cart
     const addToCart=(product )=>{
         if(cart.find((item)=>item.id===product.id)){
@@ -50,9 +63,9 @@ return(
         if(!cart.find((item)=>item.id===product.id)){
            setModal({text:'Item added in cart'});
            setTimeout(()=>setModal({text:''}), 1000);
-
             setCart([...cart, product]);
             window.navigator.vibrate(700);
+            setAmount(cart.map((item)=>item.price * item.quantity).reduce((acc, price)=>acc+price))
         }
     }
     // add item to wish
@@ -122,7 +135,7 @@ const moveToWish=(product, productID)=>{
 }
 
 return(
-        <ProductContext.Provider value={{cart, wish, addToWish, addToCart, moveToCart, moveToWish, removeFromCart, removeFromWish, modal, category, cartLength, wishLength}}>
+        <ProductContext.Provider value={{cart, wish, amount, addToWish, addToCart, moveToCart, moveToWish, removeFromCart, removeFromWish, modal, category, cartLength, wishLength}}>
        {props.children}
    </ProductContext.Provider> 
 );

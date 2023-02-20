@@ -78,98 +78,125 @@ export const Products =[
         price:62,
         img:productImage1,
         name:'blous',
-        category:'cloth'
+        category:'cloth',
+        quantity:1
        },
        {
         id:2,
         price:41,
         img:productImage2,
         name:'jumpsuit',
-        category:'cloth'
+        category:'cloth',
+        quantity:1
+
        },
        {
         id:3,
         price:32,
         img:productImage3,
         name:'jumpsuit',
-        category:'cloth'
+        category:'cloth',
+        quantity:1
+
        },
        {
         id:4,
         price:62,
         img:productImage4,
         name:'jumpsuit',
-        category:'cloth'
+        category:'cloth',
+        quantity:1
+
        },
        {
         id:5,
         price:32,
         img:productImage5,
         name:'jumpsuit',
-        category:'cloth'
+        category:'cloth',
+        quantity:1
+
        },
        {
         id:6,
         price:6,
         img:productImage6,
         name:'jumpsuit',
-        category:'cloth'
+        category:'cloth',
+        quantity:1
+
        },
        {
         id:7,
         price:8,
         img:productImage7,
         name:'jeans',
-        category:'cloth'
+        category:'cloth',
+        quantity:1
+
        },
     {
                 id:8,
                 price:27,
                 img:productImage8, 
                 name:'Gucci watch',
-                category:'Electronics'
+                category:'Electronics',
+                quantity:1
+
                   },
             {
                  id:9,
                  price:33,
                  img:productImage9, 
                  name:'Gucci watch',
-                 category:'Electronics'
+                 category:'Electronics',
+                 quantity:1
+
                   },
             {
                   id:10,
                   price:74,
                   img:productImage10, 
                   name:'Gucci watch',
-                  category:'Electronics'
+                  category:'Electronics',
+                  quantity:1
+
                      },
            {
                    id:11,
                    price:37,
                    img:productImage11, 
                    name:'Gucci watch',
-                   category:'Electronics'
+                   category:'Electronics',
+                   quantity:1
+
                         },
            {
                     id:12,
                     price:42,
                     img:productImage12, 
                     name:'Gucci watch',
-                    category:'Electronics'
+                    category:'Electronics',
+                    quantity:1
+
                         },
            {
                     id:13,
                     price:62,
                     img:productImage13, 
                     name:'Gucci watch',
-                    category:'Electronics'
+                    category:'Electronics',
+                    quantity:1
+
                         },
             {
                    id:14,
                    price:22,
                    img:productImage14, 
                     name:'Gucci watch',
-                    category:'Electronics'
+                    category:'Electronics',
+                    quantity:1
+
                       },       
 
     {
@@ -177,7 +204,9 @@ export const Products =[
       price:19,
       img:productImage15, 
       name:'Shoe',
-      category:'Shoe'     
+      category:'Shoe',
+      quantity:1
+     
 
     } ,    
     {
@@ -185,7 +214,9 @@ export const Products =[
       price:74,
       img:productImage16, 
       name:'Shoe',
-      category:'Shoe'     
+      category:'Shoe',
+      quantity:1
+   
 
     },
     {
@@ -193,7 +224,8 @@ export const Products =[
       price:52,
       img:productImage17, 
       name:'Shoe',
-      category:'Shoe'     
+      category:'Shoe',
+      quantity:1    
 
     },      
     {
