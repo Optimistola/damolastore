@@ -45,7 +45,7 @@ return(
         const storedWish=localStorage.getItem('wish');
         console.log(JSON.parse(storedWish))
         if(storedWish){
-            setCart(JSON.parse(storedWish))
+            setWish(JSON.parse(storedWish))
         }
       }, [])
       useEffect(()=>{
