@@ -19,7 +19,7 @@ return(
         cart.map((items)=>(
             <div className='md:flex md:w-[90%] border border-black m-10'>
                     <div className='flex'>
-                        <img src={items.img} className=' w-[90%] block m-5 md:m-5'/>
+                        <img src={items.img} className=' w-[full] md:w-[80%] block  md:m-5'/>
                 </div>
                 <div className='text-center flex flex-col items-center justify-center' ref={priceRef}>
                   <h2 className='text-lg font-bold '>{items.name}</h2>
