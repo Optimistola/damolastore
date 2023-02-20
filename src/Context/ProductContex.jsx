@@ -418,7 +418,7 @@ export const Products =[
 
 export const newProducts = [
   {
-    _id: "1",
+    id: "1",
     name: "Sony Camera",
     img:
       "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtZXJhfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -428,7 +428,7 @@ export const newProducts = [
     numReviews: 12,
   },
   {
-    _id: "2",
+    id: "2",
     name: "Head Phones",
     img:
       "https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhZHBob25lc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -438,7 +438,8 @@ export const newProducts = [
     numReviews: 8,
   },
   {
-    _id: "7",
+    
+    id: "7",
     name: "Coca Cola",
     img:
       "https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?cs=srgb&dl=pexels-olena-bohovyk-3819969.jpg&fm=jpg",
@@ -448,7 +449,7 @@ export const newProducts = [
     numReviews: 12,
   },
   {
-    _id: "9",
+    id: "9",
     name: "Head Phones",
     img:
       "https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhZHBob25lc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -458,7 +459,7 @@ export const newProducts = [
     numReviews: 8,
   },
   {
-    _id: "3",
+    id: "3",
     name: "iPhone",
     img:
       "https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGlwaG9uZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -468,7 +469,7 @@ export const newProducts = [
     numReviews: 12,
   },
   {
-    _id: "4",
+    id: "4",
     name: "Sony Playstation 5 Controller",
     img:
       "https://images.unsplash.com/photo-1606318801954-d46d46d3360a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBsYXklMjBzdGF0aW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -478,7 +479,7 @@ export const newProducts = [
     numReviews: 12,
   },
   {
-    _id: "5",
+    id: "5",
     name: "Laptop",
     img:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60",
@@ -488,7 +489,7 @@ export const newProducts = [
     numReviews: 10,
   },
   {
-    _id: "6",
+    id: "6",
     name: "Apple Watch",
     img:
       "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjB3YXRjaHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -498,7 +499,7 @@ export const newProducts = [
     numReviews: 12,
   },
   {
-    _id: "8",
+    id: "8",
     name: "Cream",
     img:
       "https://images.pexels.com/photos/1667088/pexels-photo-1667088.jpeg?cs=srgb&dl=pexels-laryssa-suaid-1667088.jpg&fm=jpg",
