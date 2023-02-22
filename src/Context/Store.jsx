@@ -65,7 +65,9 @@ return(
            setTimeout(()=>setModal({text:''}), 1000);
             setCart([...cart, product]);
             window.navigator.vibrate(700);
-            setAmount(cart.map((item)=>item.price * item.quantity).reduce((acc, price)=>acc+price))
+            let totalamount=0
+            totalamount+=(cart.map((item)=>item.price * item.count).reduce((acc, price)=>acc+price));
+            setAmount(totalamount)
         }
     }
     // add item to wish
@@ -133,6 +135,8 @@ const moveToWish=(product, productID)=>{
         window.navigator.vibrate(700);
     }
 }
+
+
 
 return(
         <ProductContext.Provider value={{cart, wish, amount, addToWish, addToCart, moveToCart, moveToWish, removeFromCart, removeFromWish, modal, category, cartLength, wishLength}}>
