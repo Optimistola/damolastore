@@ -29,6 +29,7 @@ return(
     const [cartLength, setCartLength]=useState(0)
     const [wishLength, setWishLength]=useState(0)
     const [amount, setAmount]=useState(0)
+    let totalamount=0;
 
     useEffect(()=>{
       const storedCart=localStorage.getItem('cart');
@@ -65,7 +66,6 @@ return(
            setTimeout(()=>setModal({text:''}), 1000);
             setCart([...cart, product]);
             window.navigator.vibrate(700);
-            let totalamount=0
             totalamount+=(cart.map((item)=>item.price * item.count).reduce((acc, price)=>acc+price));
             setAmount(totalamount)
         }
@@ -83,6 +83,9 @@ return(
 
            setWish([...wish, products]);
             window.navigator.vibrate(700);
+            totalamount+=(cart.map((item)=>item.price * item.count).reduce((acc, price)=>acc+price));
+            setAmount(totalamount)
+
         }
     }
 
