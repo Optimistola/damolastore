@@ -51,7 +51,7 @@ const ProductCard=({product, Total})=>{
     return(
         <div   className='sm:w-[250px] md:w-[30%] lg:w-[20%] border border-gray-100 shadow-sm mb-5 hover:transform transition duration-500 hover:scale-110	'>
         <div key={product.id} className='flex flex-col '>
-             <img src={product.img} className='' alt={product.category}/>
+             <img src={product.img} className='md:h-[200px]' alt={product.category}/>
              <div className='py-5 ml-3'>
              <p className='text-lg mb-3' id='price'>{product.name}</p>
              <p className='text-lg text-green-500' >$ <span ref={priceRef} id={`price${product.id}`}>{product.price}</span>.00</p>

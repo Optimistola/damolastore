@@ -2,7 +2,7 @@ import Slider from "../../Asset/Slider/slider"
 import { useProduct } from "../../Context/Store"
 import AllProducts from "../Products"
 import Category from "../Category/SingleCategory"
-import { newProducts } from "../../Context/ProductContex"
+import { AuctionProduct, newProducts } from "../../Context/ProductContex"
 import ProductCard from "../ProductCard"
 const Home=()=>{
     const {addToWish, addToCart}=useProduct()
@@ -24,6 +24,17 @@ const Home=()=>{
 
            ))}
            </div>
+           <div>
+            <h2 className='font-bold text-2xl ml-5'>Auction</h2>
+           </div>
+
+           <div className='lg:flex flex flex-wrap mt-10 justify-center ml-10 mr-10 gap-6'> 
+           {AuctionProduct.map((product)=>(
+             <ProductCard product={product}/>
+
+           ))}
+           </div>
+
         </section>
     )
 }

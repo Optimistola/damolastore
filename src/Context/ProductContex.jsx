@@ -39,6 +39,14 @@ import productImage38 from '../Asset/ProductImages/home2.jpg';
 import productImage39 from '../Asset/ProductImages/home3.jpg';
 import productImage40 from '../Asset/ProductImages/home4.jpg';
 import productImage41 from '../Asset/ProductImages/home5.jpg';
+import auction1 from '../Asset/ProductImages/auctioncar1.jpg';
+import auction2 from '../Asset/ProductImages/auctioncar2.jpg'
+import auction3 from '../Asset/ProductImages/auctioncar3.jpg'
+import auction4 from '../Asset/ProductImages/auctionshoe1.jpg'
+import auction5 from '../Asset/ProductImages/auctionshoe2.jpg'
+import auction6 from '../Asset/ProductImages/auctionshoe3.jpg'
+import auction7 from '../Asset/ProductImages/auctionbag1.jpg'
+import auction8 from '../Asset/ProductImages/auctionbag3.jpg'
 
 export const Categories=[
   {
@@ -510,5 +518,80 @@ export const newProducts = [
   },
   
 ];
+ export const AuctionProduct=[
+  {
+    id: "1",
+    name: "fantastic shoe",
+    img:auction6,
+    price: 899.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    id: "2",
+    name: "artisctic shoe",
+    img:auction5,
+    price: 999.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    id: "3",
+    name: "frankline shoe",
+    img:auction4,
+    price: 1999.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    id: "4",
+    name: "laborghini",
+    img:auction1,
+    price: 10865.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    id: "5",
+    name: " ferari",
+    img:auction2,
+    price: 12899.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    id: "6",
+    name: "benz",
+    img:auction3,
+    price: 15899.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
 
+  {
+    id: "7",
+    name: "artistic bag",
+    img:auction7,
+    price: 15899.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    id: "8",
+    name: "shooping mini bag",
+    img:auction8,
+    price: 15899.99,
+    rating: 4.0,
+    numReviews: 8,
+  },
+
+
+
+
+
+
+
+  
+]
+ 
 
