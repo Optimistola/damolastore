@@ -45,9 +45,11 @@ return(
             }
             </div>
             {cart.length>0 ?
-            <div className='md:w-[30%] h-[500px] border border-gray-600 mr-10'>
+            <div className='md:w-[30%] h-[500px] border border-gray-600 p-10'>
+                <div>
                     <h2>Receipt</h2>
                     <p>{amount}</p>
+                    </div>
                 </div>:''}
                 </div>
     </div>
