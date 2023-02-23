@@ -24,7 +24,7 @@ import img13 from '../Images/slide13.jpeg'
 import img14 from '../Images/slide14.jpeg'
 
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
-const images=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img13, img14]
+const images=[img1, img2, img3, img4, img5, img6, img11, img13, img9, img10, img14]
 const Slider= ()=>{
     const options = {
         type: "loop",
