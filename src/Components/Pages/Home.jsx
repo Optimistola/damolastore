@@ -8,6 +8,7 @@ import img2 from '../../Asset/Images/slide2.jpeg'
 import img3 from '../../Asset/Images/slide13.jpeg'
 import img4 from '../../Asset/Images/slide3.jpeg'
 import img5 from '../../Asset/Images/slide11.jpeg'
+import { Swipers } from "../../Asset/swiper"
 
 const Home=()=>{
     const {addToWish, addToCart}=useProduct()
@@ -84,6 +85,20 @@ const Home=()=>{
           </div>
  </div>
    
+ </div>
+ <div className="bg-black p-10 md:flex gap-10 mt-20 ">
+  <div className="md:w-[50%]">
+  <Swipers/>
+  </div>
+  <div className="text-white" >
+  <h2 className="lg:text-7xl md:text-2xl text-xl lg:text-gray-400">
+  Wanna Shop Online With Us? Join Now
+  </h2>
+  <p>join the community of active shoppers on our website to see whats new as they drop</p>
+  <button className="bg-yellow-500 px-2 text-lg rounded-md mt-4">Join</button>
+
+  </div>
+
  </div>
         </section>
     )

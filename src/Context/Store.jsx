@@ -88,7 +88,10 @@ return(
 
         }
     }
+useEffect(()=>{
+    setAmount(totalamount)
 
+}, [totalamount])
     useEffect(()=>{
         setCategory(Categories);
         setCartLength(cart.length);
