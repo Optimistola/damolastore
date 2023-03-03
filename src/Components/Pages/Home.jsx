@@ -95,7 +95,7 @@ const Home=()=>{
   Wanna Shop Online With Us? Join Now
   </h2>
   <p>join the community of active shoppers on our website to see whats new as they drop</p>
-  <button className="bg-yellow-500 px-2 text-lg rounded-md mt-4">Join</button>
+  <button className="bg-yellow-500 px-2 py-2 text-lg rounded-md mt-4">Join Now</button>
 
   </div>
 

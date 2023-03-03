@@ -7,10 +7,11 @@ const MobileNav= ()=>{
     const [navOpen, setnavOpen]=useState(false);
 
 return(
-<div className='flex justify-between ml-5 mr-5 mt-3 md:hidden'>
-    <div className='flex'>
-        <button className='cursor-pointer' onClick={()=>setnavOpen(true)}><IoMenu size={25}/></button>
-        <h1 className='ml-3 capitalize font-bold'>damolas <span className='text-red-600'>store</span></h1> 
+<div className='flex justify-between p-5 md:hidden'>
+<h1 className='ml-3 capitalize text-white font-bold text-lg'>damolas <span className='text-red-600'>store</span></h1> 
+
+    <div className=''>
+        <button className='cursor-pointer text-white' onClick={()=>setnavOpen(true)}><IoMenu size={25}/></button>
     </div>
     <nav className={`${navOpen ? '-right-0' : '-right-full '} fixed top-0 bg-black text-white z-50 w-full bottom-0 transition-all ease-in duration-500 `}>
         <button onClick={()=>setnavOpen(false)} className="absolute right-10 top-5 cursor-pointer"><IoClose size={25} /></button>
@@ -27,11 +28,6 @@ return(
             </li>
         </ul>
         </nav>
-        <div className='flex gap-3'>
-        <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/login'>Login</a></button>
-        <button className=' rounded outline-none px-1 text-sm hover:bg-gray-600 hover:text-white border'><a href='/sign_up'>Sign up</a></button>
-
-        </div>
 </div>
 
 )

@@ -2,14 +2,24 @@ import {BiUser} from 'react-icons/bi';
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useProduct } from '../../Context/Store';
 import { Link } from 'react-router-dom';
+import { useRef, useEffect, useState} from 'react';
 const Nav= ()=>{
+    const myRef=useRef(null);
+    const [color, showColor]=useState()
+    useEffect(() => {
+        if(color){
+        myRef.current.style.color='red'
+     }else{
+        myRef.current.style.color='';
+        }
+    }, [color])
     const{cartLength}=useProduct();
 return(
-    <nav className='hidden md:flex justify-between mt-5 text-sm semi-bold'>
-        <h1 className='ml-5 capitalize font-bold'>damolas <span className='text-red-600'>store</span></h1> 
-        <ul className='md:flex md:gap-6 lg:gap-10 md:ml-20'>
-            <li>
-                <Link to='/'>Home</Link>
+    <nav className='hidden  text-white md:flex justify-around p-5 semi-bold'>
+        <h1 className='ml-5 capitalize font-bold text-lg'>damolas <span className='text-red-600'>store</span></h1> 
+        <ul className='md:flex md:gap-6 lg:gap-10 md:ml-20' ref={myRef} onClick={() => showColor(!color)}>
+            <li >
+            <Link to='/'>Home</Link>
             </li>
             <li>
             <Link to='/about'>About</Link>
@@ -18,10 +28,6 @@ return(
             <Link to='/contact'>Contact</Link>
             </li>
         </ul>
-        <div className='gap-6 flex md:mr-20'>
-            <button className=' rounded outline-none px-3 hover:bg-gray-600 hover:text-white border'><a href='/login'>Login</a></button>
-            <button className=' rounded outline-none px-3 hover:bg-gray-600 hover:text-white border'><a href='/sign_up'>Sign up</a></button>
-        </div>
   </nav>
 )
 }
