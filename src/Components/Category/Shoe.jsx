@@ -40,8 +40,10 @@ const Electronics=()=>{
     return(
         <section>
           <Banner name={'Shoe'}/>
+          <div className="md:flex justify-around">
           <Search cat={'shoe'} action2={handleSearch}/>
-          <Filter action1={HandleFilter} min={10} max={89}/>
+          <Filter action1={HandleFilter} min={10} max={89}/> 
+          </div>
           <div ref={nameRef} className='lg:flex flex flex-wrap mt-20 justify-center ml-10 mr-10 gap-6'> 
          {Products.filter((item)=>(item.category==='Shoe')).map((product)=>(
              <ProductCard product={product}/>
