@@ -5,7 +5,7 @@ import { useState } from 'react';
          <div className=' p-5 flex '>
              <input type='text' placeholder={`search ${cat}...`}
              onChange={action2}
-             className=' outline-none w-[200px] border rounded-md border-gray-600 z-50'/>
+             className=' outline-none w-[200px] border border-purple-900 rounded-md  focus:outline'/>
              <button ><IoSearch size={20}/></button>
          </div>
      )

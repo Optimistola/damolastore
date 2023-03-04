@@ -48,7 +48,7 @@ const Clothes=()=>{
         <section>
           <Banner name={'Clothes'}/>
           <Search cat={'clothes'} action2={handleSearch}/>
-          <Filter action1={HandleFilter}/>
+          <Filter action1={HandleFilter} min={6} max={55}/>
           <div ref={nameRef} className='lg:flex flex flex-wrap mt-20 justify-center ml-10 mr-10 gap-6'> 
          {Products.filter((item)=>(item.category==='cloth')).map((product)=>(
              <ProductCard product={product}/>

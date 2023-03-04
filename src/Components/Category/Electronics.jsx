@@ -28,7 +28,7 @@ const Electronics=()=>{
         for (let i=0; i<Name.length; i++){
             const range=Name[i].querySelector('#myprice').textContent;
 
-                if(filtered<+range){
+                if(range<+filtered){
             Name[i].style.display='block'
         }else{
             Name[i].style.display='none'
@@ -41,7 +41,7 @@ const Electronics=()=>{
         <section>
           <Banner name={'Electronics'}/>
           <Search cat={'electronics'} action2={handleSearch}/>
-          <Filter action1={HandleFilter}/>
+          <Filter action1={HandleFilter} min={30} max={70}/>
           <div ref={nameRef} className='lg:flex flex flex-wrap mt-20 justify-center ml-10 mr-10 gap-6'> 
          {Products.filter((item)=>(item.category==='Electronics')).map((product)=>(
              <ProductCard product={product}/>
