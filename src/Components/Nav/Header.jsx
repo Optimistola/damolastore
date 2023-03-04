@@ -17,7 +17,7 @@ return(
         <div className='md:flex  justify-between items-center font-secondary text-boldcapitalize bg-gray-900 text-white py-4'>
         <ul className=" ml-5 flex flex-wrap justify-betwen gap-3 md:gap-3 items-center contents-center">
                 {category.map((item)=>
-                 <li className='bg-gray-500  w-[30%] lg:w-[90px] md:w-[90px] hover:bg-gray-700 rounded-md text-sm text-center text-white'>
+                 <li className='bg-gray-500  w-[30%] lg:w-[90px] md:w-[90px] hover:bg-gray-700 rounded-md text-semibold text-center text-white'>
                      <Link to={`category/${item.category}`}>{item.category}</Link>
                 </li>
                  )}

@@ -7,11 +7,15 @@ const Nav= ()=>{
     const myRef=useRef(null);
     const [color, showColor]=useState()
     useEffect(() => {
+
+    for(let i=0; i< myRef.current.children.length; i++){
         if(color){
-        myRef.current.style.color='red'
+
+        myRef.current.children[i].style.color='red'
      }else{
-        myRef.current.style.color='';
+        myRef.current.children[i].style.color='';
         }
+    }
     }, [color])
     const{cartLength}=useProduct();
 return(
