@@ -54,7 +54,7 @@ const ProductCard=({product, Total})=>{
              <img src={product.img} className='md:h-[200px]' alt={product.category}/>
              <div className='py-5 ml-3'>
              <p className='text-lg mb-3' id='price'>{product.name}</p>
-             <p className='text-lg text-green-500' >$ <span ref={priceRef} id={`price${product.id}`}>{product.price}</span>.00</p>
+             <p className='text-lg text-green-500' >$ <span ref={priceRef} id='myprice'>{product.price}</span>.00</p>
              <div className='border border-gray-600 py-2 mb-3 flex justify-center items-center gap-6 mr-3'>
             <span className='font-bold text-lg cursor-pointer' onClick={increase}><AiOutlinePlus size={15}/></span>
             <span className='bg-blue-600 text-white w-[25px] h-[25px] rounded-full flex items-center justify-center'>{count}</span>
