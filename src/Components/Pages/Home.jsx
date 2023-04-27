@@ -100,7 +100,7 @@ const Home=()=>{
   </div>
 
  </div>
- <footer class='mt-5 p-5 flex ml-5 mr-5 flex-wrap justify-between items-center gap-12'>
+ <footer class='mt-5 p-2 flex ml-3 mr-3 flex-wrap justify-between items-center gap-12'>
   <div class=''>
   <h2 class='capitalized font-bold text-xl'>Damola<span class='text-red-600'>Store</span></h2>
 <ul>
@@ -121,9 +121,10 @@ const Home=()=>{
   <h2 class='font-bold text-xl'>Categories</h2>
   <ul>
     <li><Link to='/category/cloth'>Cloth</Link></li>
-    <li><Link to='/about'>Shoes</Link></li>
-    <li><Link to='/contact'>Furniture</Link></li>
-    <li><Link to='/contact'>Home</Link></li>
+    <li><Link to='/category/shoe'>Shoes</Link></li>
+    <li><Link to='/category/furniture'>Furniture</Link></li>
+    <li><Link to='/category/furniture'>Furniture</Link></li>
+    <li><Link to='/category/home'>Home</Link></li>
   </ul>
 </div>
  </footer>
