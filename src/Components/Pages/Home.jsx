@@ -8,8 +8,8 @@ import img2 from '../../Asset/Images/slide2.jpeg'
 import img3 from '../../Asset/Images/slide13.jpeg'
 import img4 from '../../Asset/Images/slide3.jpeg'
 import img5 from '../../Asset/Images/slide11.jpeg'
-import { Swipers } from "../../Asset/swiper"
-
+import { Swipers } from "../../Asset/swiper";
+import { Link } from "react-router-dom"
 const Home=()=>{
     const {addToWish, addToCart}=useProduct()
     return(
@@ -86,7 +86,7 @@ const Home=()=>{
  </div>
    
  </div>
- <div className="bg-black p-10 md:flex gap-10 mt-20 ">
+ <div className="bg-gray-900 p-10 md:flex gap-10 mt-20 ">
   <div className="md:w-[50%]">
   <Swipers/>
   </div>
@@ -100,6 +100,35 @@ const Home=()=>{
   </div>
 
  </div>
+ <footer class='mt-5 p-5 flex ml-5 mr-5 flex-wrap justify-between items-center gap-12'>
+  <div class=''>
+  <h2 class='capitalized font-bold text-xl'>Damola<span class='text-red-600'>Store</span></h2>
+<ul>
+  <li>Facebook</li>
+  <li>Twitter</li>
+  <li>Github</li>
+</ul>
+  </div>
+<div>
+  <h2 class='font-bold text-xl'>Navigations</h2>
+  <ul>
+    <li><Link to='/'>Home</Link></li>
+    <li><Link to='/about'>About</Link></li>
+    <li><Link to='/contact'>Contact</Link></li>
+  </ul>
+</div>
+<div>
+  <h2 class='font-bold text-xl'>Categories</h2>
+  <ul>
+    <li><Link to='/category/cloth'>Cloth</Link></li>
+    <li><Link to='/about'>Shoes</Link></li>
+    <li><Link to='/contact'>Furniture</Link></li>
+    <li><Link to='/contact'>Home</Link></li>
+  </ul>
+</div>
+ </footer>
+ <hr/>
+ <div class='text-center text-gray-900'>&copy; All right reserved. Damolastore 2023</div>
         </section>
     )
 }

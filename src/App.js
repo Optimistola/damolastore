@@ -27,7 +27,6 @@ function App() {
           <Route path='/category/electronics' element={<Electronics/>}></Route>
           <Route path='/category/shoe' element={<Shoe/>}></Route>
           <Route path='/category/furniture' element={<Furniture/>}></Route>
-
         </Routes>
       </BrowserRouter>
 
